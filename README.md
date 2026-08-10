@@ -4,7 +4,7 @@
 
 ![Image of digital block with shapes](/images/apiImg.jpeg)
 
-> [!NOTE]
+> [!IMPORTANT]
 AIM: Create an Address Book Application with Database persistance - SQLite Database
 > This application could form the basic foundation for your CAB302 Project. There is a requirement that your application contains a database, however, the choice of database is left as a decision to be made by the group. Any database (apart from an in-memory/volatile database) is acceptable. Make sure the database you select has a JDBC driver to connect your application to the database - most databases will of course support Java.
 
