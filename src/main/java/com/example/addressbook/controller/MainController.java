@@ -2,7 +2,7 @@ package com.example.addressbook.controller;
 
 import com.example.addressbook.model.Contact;
 import com.example.addressbook.model.IContactDAO;
-import com.example.addressbook.model.MockContactDAO;
+import com.example.addressbook.model.SqliteContactDao;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
@@ -25,7 +25,7 @@ public class MainController {
     @FXML
     private VBox contactContainer;
     public MainController() {
-        contactDAO = new MockContactDAO();
+        contactDAO = new SqliteContactDao();
     }
 
     /**
@@ -33,6 +33,7 @@ public class MainController {
      * updates the text fields with the contact's information.
      * @param contact The contact to select.
      */
+
     private void selectContact(Contact contact) {
         contactsListView.getSelectionModel().select(contact);
         firstNameTextField.setText(contact.getFirstName());
