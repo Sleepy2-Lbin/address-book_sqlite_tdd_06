@@ -69,6 +69,7 @@ public class SqliteContactDao implements IContactDAO{
         try{
             Statement statement = connection.createStatement();
             String query = "SELECT * FROM contacts";
+            // this is a test for git
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
                 int id = resultSet.getInt("id");
